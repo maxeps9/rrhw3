@@ -11,10 +11,11 @@
     </div>
   <% end %>
 
+ <div class="container">
   <div class="control-group">
-    <%= f.label :restaurant, class: 'control-label' %><br />
+    <%= f.label :restaurant, class: 'control-label' %> <br />
     <div class="controls">
-    	<%= f.collection_select :restaurant, Review.all, :restaurant, :restaurant %>
+    	<%= f.text_field :restaurant %>
     </div>
   </div>
   
@@ -25,7 +26,22 @@
     </div>
   </div>
   
+  <div class="control-group">
+  	<label class ="control-label">Would You Eat Here?</label>
+  	<div class="controls">
+  		<label class="radio">
+  			<%= radio_button_tag(:YesNo, "Yes") %>
+  			<%= label_tag(:YesNo_Yes, "Yeah, I love this place!") %>
+		</label>
+		<label class="radio">
+  			<%= radio_button_tag(:YesNo, "No") %>
+  			<%= label_tag(:YesNo_No, "No, I've had better") %>
+		</label>
+  	</div>	
+  </div>
+  
   <div class="form-actions">
     <%= f.submit class: "btn btn-success" %>
   </div>
+ </div>
 <% end %>

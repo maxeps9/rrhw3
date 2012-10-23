@@ -23,15 +23,15 @@
   	<%= f.label "Price", class: 'control-label' %> <br />
   	<div class="controls">
 	  <label class="checkbox">
-	  	<%= check_box_tag(:price, 10) %>
+	  	<%= check_box_tag(:price, "10") %>
 	  	<%= label_tag(:price_10, "<$15") %>
 	  </label>
 	  <label class="checkbox">
-	  	<%= check_box_tag(:price, 20) %>	
-	  	<%= label_tag(:age_20, "$15 - $25") %>
+	  	<%= check_box_tag(:price, "20") %>	
+	  	<%= label_tag(:price_20, "$15 - $25") %>
 	  </label>
 	  <label class="checkbox">
-	  	<%= check_box_tag(:price, 30) %>
+	  	<%= check_box_tag(:price, "30") %>
 	  	<%= label_tag(:price_30, ">$25") %>
 	  </label>
 	  </div>

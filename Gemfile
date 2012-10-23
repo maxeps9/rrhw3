@@ -6,6 +6,9 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
+  gem 'rspec-rails'
+  gem 'debugger'
+  gem 'capybara'
   gem 'sqlite3'
 end
 

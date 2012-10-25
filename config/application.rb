@@ -58,12 +58,16 @@ module Rrhw3
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-    
+     
+    config.action_mailer.default_url_options do { :host => 'localhost:3000' }   end
+     
     config.generators do |g|
       g.controller_specs false 
       g.view_specs false 
       g.helper_specs false
     end
+    
+
     
   end
 end

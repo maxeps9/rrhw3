@@ -1,0 +1,7 @@
+
+one:
+  email: eppels@gmail.com
+  password: admin1
+  password_confirmation: admin1
+  encrypted_password: $2a$10$.1pcCBK8LEtWpoQeW.pbjexlaXmIlMUwXJp./B7cjRlEOlIMN9Oja 
+  

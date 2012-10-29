@@ -1,6 +1,11 @@
 require 'spec_helper'
 
 describe "Reviews" do
+  
+  before do
+    sign_in
+  end
+
   it "makes a valid review" do
     visit reviews_path
     click_link "New Review"

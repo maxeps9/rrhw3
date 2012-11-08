@@ -17,6 +17,7 @@ group :production do
 end
 
 gem 'rails_admin'
+gem 'spreedly-core-ruby'
 
 # Gems used only for assets and not required
 # in production environments by default.

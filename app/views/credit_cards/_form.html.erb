@@ -1,6 +1,6 @@
 <form action="https://spreedlycore.com/v1/payment_methods" method="POST">
     <fieldset>
-        <input name="redirect_url" type="hidden" value="http://obscure-wildwood-2957.herokuapp.com" />
+        <input name="redirect_url" type="hidden" value="http://obscure-wildwood-2957.herokuapp.com/orders/new" />
         <input name="api_login" type="hidden" value="<%= ENV['SPREEDLYCORE_API_LOGIN'] %>" />
         <label for="credit_card_first_name">First name</label>
         <input id="credit_card_first_name" name="credit_card[first_name]" type="text" />

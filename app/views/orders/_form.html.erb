@@ -24,15 +24,15 @@
   	<div class="controls">
 	  <label class="checkbox">
 	  	<%= check_box_tag(:price, "10") %>
-	  	<%= label_tag(:price_10, "<$15") %>
+	  	<%= label_tag(:price, "<$15") %>
 	  </label>
 	  <label class="checkbox">
 	  	<%= check_box_tag(:price, "20") %>	
-	  	<%= label_tag(:price_20, "$15 - $25") %>
+	  	<%= label_tag(:price, "$15 - $25") %>
 	  </label>
 	  <label class="checkbox">
 	  	<%= check_box_tag(:price, "30") %>
-	  	<%= label_tag(:price_30, ">$25") %>
+	  	<%= label_tag(:price, ">$25") %>
 	  </label>
 	  </div>
   </div>
@@ -43,6 +43,8 @@
     	<%= f.text_field :location %>
     </div>
   </div>
+  
+  <%= link_to 'Make a Payment!', new_credit_card_path %>
   
   <div class="form-actions">
     <%= f.submit class: "btn btn-success" %>

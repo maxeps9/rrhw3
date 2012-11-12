@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121025180032) do
+ActiveRecord::Schema.define(:version => 20121108194449) do
+
+  create_table "credit_cards", :force => true do |t|
+    t.string   "user_email"
+    t.string   "credit_card_first_name"
+    t.string   "credit_card_last_name"
+    t.string   "credit_card_number"
+    t.string   "credit_card_verification_value"
+    t.string   "credit_card_month"
+    t.string   "credit_card_year"
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+  end
 
   create_table "friends", :force => true do |t|
     t.string   "first_name"

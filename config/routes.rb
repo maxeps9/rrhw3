@@ -1,4 +1,6 @@
 Rrhw3::Application.routes.draw do
+  resources :credit_cards
+
   devise_for :users
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'

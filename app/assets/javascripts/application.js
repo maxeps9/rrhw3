@@ -13,3 +13,18 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(function () {
+    textDisplayed = true;
+    var $help = $("#help");
+    $("button").click(function (event) {
+        if (textDisplayed) {
+            $help.hide("slow");
+            textDisplayed = false;
+        }
+        else {
+            $help.show("slow");
+            textDisplayed = true;
+        }
+    });
+});​
